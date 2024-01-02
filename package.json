@@ -1,0 +1,42 @@
+{
+  "name": "ts-express-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod-main": "NODE_ENV=production node dist/src/mainServer.js",
+    "prod-admin": "NODE_ENV=production node dist/src/adminServer.js",
+    "dev-main": "nodemon src/mainServer.ts",
+    "dev-admin": "nodemon src/adminServer.ts",
+    "build": "tsc -p . && tspath -f",
+    "debug-main": "nodemon --inspect src/mainServer.ts",
+    "debug-admin": "nodemon --inspect src/adminServer.ts",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "axios": "^1.6.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.1",
+    "joi": "^17.11.0",
+    "pino": "^8.17.2",
+    "pino-http": "^8.6.1",
+    "tspath": "^2.6.8",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.7",
+    "husky": "^8.0.3",
+    "nodemon": "^3.0.2",
+    "pino-pretty": "^10.3.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  }
+}

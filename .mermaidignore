@@ -1,0 +1,13 @@
+node_modules
+src/keys
+keys
+dist
+.git
+pnpm-lock.yaml
+prompts.txt
+nodemon.json
+insomnia
+.vscode
+.husky
+.mermaidignore
+scripts
